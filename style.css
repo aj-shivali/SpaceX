@@ -46,7 +46,7 @@ body {
   color: aliceblue;
   text-align: center;
   font-size: 15rem;
-  background-image: url("./spacex-logo.png");
+  background-image: url("spacex-logo.png");
   background-size: 100%;
   background-repeat: no-repeat;
 }
