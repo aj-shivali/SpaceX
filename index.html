@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="api.js"></script>
+</head>
+  <body>
+    <div class="navbar">
+      <div id="nav-ul">
+        <ul>
+          <li>Home</li>
+          <li>About SpaceX</li>
+          <li>Know More</li>
+        </ul>
+      </div>
+      <div id="nav-search" style="display: flex">
+        <input type="search" placeholder="Search" />
+        <button id="search-btn">Search</button>
+      </div>
+    </div>
+    
+      <div id="header"></div>
+      <div id="upcoming-container">
+         <div id = 'div1' class="card"></div>
+         <div id = 'div2' class="card">
+         </div>
+         <!-- <div class="card"  id = 'div3'>
+            
+         </div>
+         <div class="card"  id = 'div4'>
+         </div>
+         <div class="card"  id = 'div5'></div> -->
+         <button class="upcoming-btn">Display All Upcoming Launches</button>
+      </div>
+      <div id="past-container">
+          <div class="card" id="past1"></div>
+         <div class="card" id="past2"></div>
+         <div class="card" id="past3"></div>
+         <div class="card" id="past4"></div>
+         <div class="card" id="past5"></div>
+         <button class="past-btn">Display All Past Launches</button> 
+      </div>
+
+      <div id="upcoming">
+          <button class="upcoming-btn" id="all-up-btn">Hide All Upcoming Launches</button>
+      </div>
+      <div id="past">
+          <button class="upcoming-btn" id="all-past-btn">Hide All Past Launches</button>
+      </div>
+    </div>
+    <!-- <button type="button" id="print" onClick="window.location='Info.html'"> Print </button> -->
+    <script src="script.js"></script>
+    <script>
+            function Redirect() {
+               location.href = "./info.html";
+
+        }
+    </script>
+  </body>
+</html>

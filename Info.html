@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="info.css" />
+    <script src="info.js"></script>
+  </head>
+  <body>
+    <div id="container-top">
+      <div id="card-info">
+          <div id="flight-no">
+              Flight no:123
+          </div>
+          <div id="mission"></div>
+          <div id="launch-year">
+            Name : USF
+          </div>
+          <div id="rocket-id"></div>
+          <div id="rocket-type"></div>
+      </div>
+      <div id="card-video">
+        <embed id="youtube"
+          width="100%"
+          height="490px"
+        >
+      </embed>
+      </div>
+      <div id="image-container"></div>
+    </div>
+    <div id="container-rocket">
+        <div id="rocket-heading"><span style="color: teal;">R</span>OCKET <span style="color: teal;">I</span>NFO</div>
+        <div id="accordion-data">
+      <button class="accordion" id="#accordion-info">Info About Rocket</button>
+      <div class="panel" id="rocket-info">
+       </div>
+
+      <button class="accordion" id=#accordion-stage1">Stage-1</button>
+      <div class="panel" id="stage-1">
+        <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi blandit hendrerit varius. Mauris ut iaculis nisi. Duis aliquet rhoncus risus sed iaculis. Nulla sit amet mauris at velit auctor rutrum. Aenean at metus urna. Mauris eleifend eu massa non venenatis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mi libero, commodo et euismod eu, semper ac velit. Mauris gravida auctor elit vel fringilla. -->
+      </div>
+
+      <button class="accordion"id="#accordion-stage2">Stage-2</button>
+      <div class="panel" id="stage-2">
+        <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi blandit hendrerit varius. Mauris ut iaculis nisi. Duis aliquet rhoncus risus sed iaculis. Nulla sit amet mauris at velit auctor rutrum. Aenean at metus urna. Mauris eleifend eu massa non venenatis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mi libero, commodo et euismod eu, semper ac velit. Mauris gravida auctor elit vel fringilla.     -->
+      </div>
+      </div>
+    </div>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "flex") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "flex";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

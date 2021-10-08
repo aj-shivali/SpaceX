@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Bebas Neue', cursive;
+}
+
+#container-top {
+  background-color: teal;
+  height: 70vh;
+  padding: 70px 0px 0px 70px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(2, 83, 83);
+}
+#container-top{
+
+}
+#flight-no{
+    margin-top:20%;
+}
+
+#card-info {
+  height: 70%;
+  width: 40%;
+  background-color: white;
+  box-shadow: 0 15px 18px 0 rgba(252, 252, 252, 0.527);
+}
+#card-video {
+  background-color: white;
+  height: 70%;
+  width: 40%;
+}
+#container-rocket{
+    align-items: center;
+    align-content: space-around;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80vh;
+}
+#accordion-data{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.accordion {
+  background-color:teal;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  /* margin-left: 150px; */
+  width: 50%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  /* margin: 10px; */
+}
+
+.active,
+.accordion:hover {
+  background-color: #7ABA7A;
+}
+
+#card-video{
+    text-align: center;
+}
+
+.panel {
+
+  /* padding: 0 18px; */
+  display: none;
+  width:50%;
+  height: auto;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  /* padding:10px; */
+  color: white;
+  /* margin-left: 235px;         */
+  background-color :teal;
+  overflow: hidden;
+  font-size: 1.5rem;
+}
+#rocket-heading{
+    /* height: 20vh; */
+    width: 50%;
+    text-align: center;
+    font-size: 5rem;
+    padding: 3% 10% 10% 20%;
+    text-decoration:underline teal;
+
+}
